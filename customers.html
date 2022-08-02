@@ -3,30 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/zertifier_logos/favicon.ico" type="image/x-icon">
     <title>Customers app</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <hgroup>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="index.html"><img src="images/zertifier_logos/zertifier-title.png" class="image-logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/customers.html">Customers</a>
+                        <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Cognom</th>
+                <th>Tlfn</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Nelson</td>
+                <td>Stankova</td>
+                <td><a href="tel:+503(030)-1002024">+503(030)-1002024</a></td>
+                <td><a href="mailto:itnelson19@yopmail.com">itnelson19@yopmail.com</a></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Alberto</td>
+                <td>Gonzalez</td>
+                <td><a href="tel:+503(030)-1003025">+503(030)-1003025</a></td>
+                <td><a href="mailto:bfaberto5@yopmail.com">bfaberto5@yopmail.com</a></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Carles</td>
+                <td>Saenz</td>
+                <td><a href="tel:+503(030)-1002031">+503(030)-1002031</a></td>
+                <td><a href="mailto:jurabat20@yopmail.com">jurabat20@yopmail.com</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <img src="images/zertifier_logos/zertifier_logo_horizontal_7.png" alt="zertifier logo horizntal" class="mx-auto image-logo">
+
 </hgroup>
 </body>
 </html>
