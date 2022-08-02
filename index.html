@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/zertifier_logos/favicon.ico" type="image/x-icon">
     <title>Customers app</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light hide-element">
     <div class="container-fluid">
-        <a class="navbar-brand" href="./">Navbar</a>
+        <a href="index.html"><img src="images/zertifier_logos/zertifier-title.png" class="image-logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,10 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./customers.html">Customers</a>
+                    <a class="nav-link" href="customers.html">Customers</a>
                 </li>
             </ul>
         </div>
@@ -30,12 +32,12 @@
 
 <div class="container p-4">
     <h1 class="mx-auto text-center w-auto">Customer management page</h1>
-    <p class="m-auto mt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos
+    <p class="mx-auto mt-4 text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos
         earum eos ipsum iste laborum nemo non,
         possimus, sequi totam unde vitae. Animi distinctio doloribus libero nemo neque nisi numquam?</p>
 
     <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 order-md-first order-1 col-md-6 col-lg-4 d-flex align-items-stretch">
             <div class="card text-center">
                 <img class="card-img-top"
                      src="images/statue.webp"
@@ -48,7 +50,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 order-first col-md-6 col-lg-4 d-flex align-items-stretch">
             <div class="card text-center">
                 <img class="card-img-top"
                      src="images/beach.webp"
@@ -61,7 +63,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 order-1 order-md-last col-md-6 col-lg-4 d-flex align-items-stretch">
             <div class="card text-center">
                 <img class="card-img-top"
                      src="images/mountain.webp"
