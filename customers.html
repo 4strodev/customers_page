@@ -7,69 +7,116 @@
     <title>Customers app</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom.css">
+    <script src="https://use.fontawesome.com/ee9ea44a4f.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-<hgroup>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a href="index.html"><img src="images/zertifier_logos/zertifier-title.png" class="image-logo" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
-                    </li>
-                </ul>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a href="index.html"><img src="images/zertifier_logos/zertifier-title.png" class="image-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container d-flex flex-column">
+    <div class="row mt-3">
+        <button type="button" class="btn btn-primary col-md-3" data-bs-toggle="modal" data-bs-target="#customerModal">Add
+            customer
+        </button>
+    </div>
+    <table class="table table-striped mt-2">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th class="d-none d-sm-table-cell">Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th class="d-none d-md-table-cell">Email</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td class="d-none d-sm-table-cell">Nelson</td>
+            <td>Stankova</td>
+            <td><a href="tel:+503(030)-1002024">+503(030)-1002024</a></td>
+            <td class="d-none d-md-table-cell"><a href="mailto:itnelson19@yopmail.com">itnelson19@yopmail.com</a></td>
+            <td><div class="d-flex"><button class="btn btn-primary fa fa-pencil-square-o" aria-hidden="true"></button><button class="btn btn-danger fa fa-times"></button></div></td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td class="d-none d-sm-table-cell">Alberto</td>
+            <td>Gonzalez</td>
+            <td><a href="tel:+503(030)-1003025">+503(030)-1003025</a></td>
+            <td class="d-none d-md-table-cell"><a href="mailto:bfaberto5@yopmail.com">bfaberto5@yopmail.com</a></td>
+            <td><div class="d-flex"><button class="btn btn-primary fa fa-pencil-square-o" aria-hidden="true"></button><button class="btn btn-danger fa fa-times"></button></div></td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td class="d-none d-sm-table-cell">Carles</td>
+            <td>Saenz</td>
+            <td><a href="tel:+503(030)-1002031">+503(030)-1002031</a></td>
+            <td class="d-none d-md-table-cell"><a href="mailto:jurabat20@yopmail.com">jurabat20@yopmail.com</a></td>
+            <td><div class="d-flex"><button class="btn btn-primary fa fa-pencil-square-o" aria-hidden="true"></button><button class="btn btn-danger fa fa-times"></button></div></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal" id="customerModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="name-input">Name</label>
+                        <input type="text" name="name" id="name-input" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="surname-input">Surname</label>
+                        <input type="text" name="name" id="surname-input" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="phone-input">Phone</label>
+                        <input type="text" name="name" id="phone-input" class="form-control">
+                    </div>
+                    <div class="col-md-8">
+                        <label for="email-input">Email</label>
+                        <input type="text" name="name" id="email-input" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>Cognom</th>
-                <th>Tlfn</th>
-                <th>Email</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Nelson</td>
-                <td>Stankova</td>
-                <td><a href="tel:+503(030)-1002024">+503(030)-1002024</a></td>
-                <td><a href="mailto:itnelson19@yopmail.com">itnelson19@yopmail.com</a></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Alberto</td>
-                <td>Gonzalez</td>
-                <td><a href="tel:+503(030)-1003025">+503(030)-1003025</a></td>
-                <td><a href="mailto:bfaberto5@yopmail.com">bfaberto5@yopmail.com</a></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Carles</td>
-                <td>Saenz</td>
-                <td><a href="tel:+503(030)-1002031">+503(030)-1002031</a></td>
-                <td><a href="mailto:jurabat20@yopmail.com">jurabat20@yopmail.com</a></td>
-            </tr>
-            </tbody>
-        </table>
     </div>
+</div>
 
-    <img src="images/zertifier_logos/zertifier_logo_horizontal_7.png" alt="zertifier logo horizntal" class="mx-auto image-logo">
-
-</hgroup>
+<footer class="mt-auto row container m-auto mb-5">
+    <img src="images/zertifier_logos/zertifier_logo_horizontal_7.png" alt="zertifier logo horizntal"
+         class="text-center col col-md-7 col-lg-4 m-md-auto">
+</footer>
 </body>
 </html>
